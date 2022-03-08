@@ -64,7 +64,26 @@ h2 {
 
 @media screen and (min-width: 1440px) {
   .article {
+    max-width: 800px;
     display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "presentation presentation"
+    "price info";
+  }
+
+  .article__section--presentation {
+    grid-area: presentation;
+  }
+  .article__section--price {
+    border-radius: 0 0 0 .5rem;
+    grid-area: price;
+  }
+
+  .article__section--info {
+    border-radius: 0 0 .5rem 0;
+    grid-area: info;
   }
 }
 
@@ -74,7 +93,7 @@ h2 {
 
 .article__section--info {
   background-color: var(--primary-lighter);
-  border-radius : 0 0 .5rem.5rem;
+  border-radius : 0 0 .5rem 0;
 }
 
 .article__title,
