@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <article class="article">
+        <section class="article__section article__section--presentation">
+          <h1 class="article__title">Join our community</h1>
+          <h2 class="article__subtitle">
+            30-day, hassle-free money back guarantee
+          </h2>
+          <p class="article__text">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </section>
+        <section class="article__section article__section--price">
+          <h2 class="article__subtitle article__subtitle--light">monthly subscription</h2>
+          <div class="article__orderSummary">
+            <p class="article__orderPrice"><strong>&dollar;29</strong></p>
+            <p class="article__orderTime">per month</p>
+          </div>
+          <p class="article__text article__text--light">Full access for less than &dollar;1 a day</p>
+          <a class="article__orderLink" href="" target="_blank" rel="noopener noreferrer">Sign Up </a>
+        </section>
+        <section class="article__section article__section--info">
+          <h2 class="article__subtitle article__subtitle--light">why us</h2>
+          <ul class="article__unorderedList">
+            <li class="article__listItem">Tutorials by industry experts</li>
+            <li class="article__listItem">Peer &amp; expert code review</li>
+            <li class="article__listItem">Coding exercises</li>
+            <li class="article__listItem">Access to our GitHub repos</li>
+            <li class="article__listItem">Community forum</li>
+            <li class="article__listItem">Flashcard decks</li>
+            <li class="article__listItem">New videos every week</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/a-sauvaget"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Alexandre Sauvaget</a
+      >.
+    </footer>
+  </body>
 </html>
